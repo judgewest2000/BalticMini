@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>My Outlets</ion-title>
+    </ion-navbar>
+      <ion-searchbar placeholder="Filter..." (ionInput)="filterItems($event)"></ion-searchbar>
+</ion-header>
+
+
+<ion-content class="outlet">
+
+    <!--<ion-searchbar placeholder="Filter..." (ionInput)="filterItems($event)"></ion-searchbar>-->
+
+    <ion-list>
+        <button ion-item *ngFor="let outlet of outlets" (click)="goToOutlet(outlet)">
+            <ion-avatar item-left>
+                <img src="{{outlet.avatarUrl}}" />
+            </ion-avatar>
+            <h2>{{outlet.name}}</h2>
+            <p>Contacts: {{getOutletContactCount(outlet)}}</p>
+        </button>
+    </ion-list>
+
+
+</ion-content>
