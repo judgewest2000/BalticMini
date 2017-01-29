@@ -14,7 +14,7 @@
   <allow-intent href="geo:*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
-    <plugin name="cordova-plugin-crosswalk-webview" spec="~2.1.0" />
+    <!--<plugin name="cordova-plugin-crosswalk-webview" spec="~2.1.0" />-->
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
